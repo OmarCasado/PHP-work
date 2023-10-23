@@ -2,16 +2,11 @@
 
 <?php
 require_once('../../lib/util.php');
-<<<<<<< HEAD
-=======
-require_once('warikan_util.php');
->>>>>>> 1317f212e1d92644d8cb49d84cb34c92f1f917c3
 cken_check($_POST);
 ?>
 
 <?php
 $errors = [];
-<<<<<<< HEAD
 
 $goukei = 0;
 if (isset($_POST['goukei'])) {
@@ -39,10 +34,6 @@ if (isset($_POST['ninzu'])) {
   $errors[] = "人数が未設定。";
 }
 
-=======
-$goukei = getGoukeiFromPost($errors);
-$ninzu = getNinzuFromPost($errors);
->>>>>>> 1317f212e1d92644d8cb49d84cb34c92f1f917c3
 ?>
 
 <?php
