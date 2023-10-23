@@ -1,10 +1,15 @@
 <?php
 require_once('../../lib/util.php');
+<<<<<<< HEAD
+=======
+require_once('nameCheck_util.php');
+>>>>>>> 1317f212e1d92644d8cb49d84cb34c92f1f917c3
 
 cken_check($_POST);
 ?>
 <?php
 $isError = false;
+<<<<<<< HEAD
 $name = "";
 if (isset($_POST['name'])) {
   //trim deletes the spaces before or/and after of the data.
@@ -17,6 +22,9 @@ if (isset($_POST['name'])) {
 } else {
   $isError = true;
 }
+=======
+$name = getNameFromPost($isError);
+>>>>>>> 1317f212e1d92644d8cb49d84cb34c92f1f917c3
 ?>
 
 <?php require_once('../../common/header.php'); ?>

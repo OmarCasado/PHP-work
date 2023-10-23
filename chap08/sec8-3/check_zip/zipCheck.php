@@ -1,8 +1,25 @@
 <?php
 
+<<<<<<< HEAD
 
 
 
+=======
+function getZipFromPost(&$errors)
+{
+  $zip = "";
+  if (isset($_POST['zip'])) {
+    $zip = trim($_POST['zip']);
+    $pattern = "/^[0-9]{3}-[0-9]{4}$/";
+    if (!preg_match($pattern, $zip)) {
+      $errors[] = "郵便番号を正しく入力してください。";
+    } else {
+      $errors[] = "郵便番号を正しく入力してください。";
+    }
+  }
+  return $zip;
+}
+>>>>>>> 1317f212e1d92644d8cb49d84cb34c92f1f917c3
 
 ?>
 
@@ -14,6 +31,7 @@ cken_check($_POST);
 
 <?php
 $errors = [];
+<<<<<<< HEAD
 
 $zip = '';
 if (isset($_POST['zip'])) {
@@ -27,6 +45,9 @@ if (isset($_POST['zip'])) {
   $errors[] = "郵便番号を正しく入力してください。";
 }
 
+=======
+$zip = getZipFromPost($errors);
+>>>>>>> 1317f212e1d92644d8cb49d84cb34c92f1f917c3
 ?>
 
 <?php
