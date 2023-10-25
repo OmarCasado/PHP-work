@@ -10,29 +10,30 @@ thead {
 	text-align: left;
 }
 
-tr * {
-	padding: 0.5em 1em 0.5em 1em;
+tr *{
+	/* padding:  0.5em 1em 0.5em 1em; */
 	width: auto;
 	text-align: left;
 }
 
-tbody tr *:first-child {
+tbody tr *:first-child{
 	width: 3em;
 }
+/*
+tbody tr *:nth-child(2){
+	width: 8em; 
+}
+*/
 
-/* tbody tr *:nth-child(2) {
-	width: 8em;
-} */
-
-tbody tr *:nth-child(3) {
+tbody tr *:nth-child(3){
 	width: 4em;
 }
 
-tbody tr *:nth-child(4) {
+tbody tr *:nth-child(4){
 	width: 3em;
 }
 
-tbody tr *:nth-child(5) {
+tbody tr *:nth-child(5){
 	width: 3em;
 	text-align: right;
 }

@@ -1,12 +1,6 @@
 @charset "utf-8";
 
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-figure {
+body, h1, h2, h3, p, ul, figure {
   margin: 0;
 }
 
@@ -23,7 +17,7 @@ li {
   margin-bottom: 1em;
 }
 
-ol>li {
+ol > li {
   list-style-type: decimal;
   margin-bottom: 0;
 }
@@ -68,20 +62,19 @@ footer {
 
 .main-contents {
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 nav li {
   margin: 0 0 0 1rem;
 }
-
 nav li:first-of-type {
-  margin: 0;
+  margin: 0 0 0 0;
 }
 
 @media (min-width: 600px) {
-
   .header-inn,
-  body>div {
+  body > div {
     width: 600px;
     margin: 0 auto;
   }
