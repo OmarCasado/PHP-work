@@ -61,6 +61,23 @@ footer {
   padding: 1rem 0;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-contents {
+  flex-direction: column;
+}
+
+nav li {
+  margin: 0 0 0 1rem;
+}
+
+nav li:first-of-type {
+  margin: 0;
+}
+
 @media (min-width: 600px) {
 
   .header-inn,
@@ -69,8 +86,7 @@ footer {
     margin: 0 auto;
   }
 
-  .flex {
-    display: flex;
-    justify-content: space-between;
+  .main-contents {
+    flex-direction: row;
   }
 }
